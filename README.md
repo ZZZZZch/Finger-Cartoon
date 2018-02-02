@@ -15,12 +15,16 @@
 -		更多权值文件与配置文件：https://pjreddie.com/darknet/yolo/
 -		若自行下载模型权值和配置文件，需要在配置文件中将最后一层卷积的filter数改为35，最后class数量改为2。
 -	创建两个文件夹train/Images与train/Annotations，分别放置训练图片与训练标注文件（为模块二中生成的文件）。
--	训练命令： 
--		flow --model cfg/tiny-yolo-voc-4c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images
--		或 ./flow --model cfg/tiny-yolo-voc-4c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images
+```
+flow --model cfg/tiny-yolo-voc-4c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images
+或 
+./flow --model cfg/tiny-yolo-voc-4c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images
+```
 -	生成模型文件保存在ckpt文件下中。
 -	测试命令：
--		flow --imgdir ValImgs/ --model cfg/tiny-yolo.cfg --load bin/tiny-yolo.weights --gpu 1.0
+```
+flow --imgdir ValImgs/ --model cfg/tiny-yolo.cfg --load bin/tiny-yolo.weights --gpu 1.0
+```
 -		将在测试图片文件夹下创建ValiImgs/out 放置检测结果。
 -	已经修改过源代码，添加手指与卡通双目标重叠时进行提示的功能。
 
