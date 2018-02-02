@@ -5,7 +5,7 @@
 -	官方github：https://github.com/thtrieu/darkflow
 -	所需配置  Python3, tensorflow 1.0+, numpy, opencv 3。
 -	初始化程序：
-'''python
+''' shell
 python3 setup.py build_ext --inplace
 pip install -e .
 pip install .
