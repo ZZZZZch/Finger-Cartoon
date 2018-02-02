@@ -5,9 +5,11 @@
 -	官方github：https://github.com/thtrieu/darkflow
 -	所需配置  Python3, tensorflow 1.0+, numpy, opencv 3。
 -	初始化程序：
--		python3 setup.py build_ext --inplace
--		pip install -e .
--		pip install .
+'''python
+python3 setup.py build_ext --inplace
+pip install -e .
+pip install .
+'''
 -	训练需要下载权值文件与配置cfg文件
 -		我上传的文件中自带一个/Finger-Cartoon/darkflow/bin/tiny-yolo-voc.weights权值文件，是小型yolo模型，训练速度快，识别效果较差。与该权值文件相对应的配置文件为/Finger-Cartoon/darkflow/cfg/tiny-yolo-4c.cfg。
 -		更多权值文件与配置文件：https://pjreddie.com/darknet/yolo/
