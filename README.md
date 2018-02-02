@@ -1,6 +1,6 @@
 # Finger-Cartoon
 检测手指是否指向卡通，准备收集更多训练数据，获得更好效果。
-
+![](./preview.png)
 ## 模块一：使用YOLO基于tensorflow的实现——Darkflow
 -	官方github：https://github.com/thtrieu/darkflow
 -	所需配置  Python3, tensorflow 1.0+, numpy, opencv 3。
